@@ -6,6 +6,8 @@ Contains code that we use on both the client and server, namely:
 - ts types
 - possibly more in the future
 
+## Prod
+
 Code is built and published to npm from my machine :P
 
 1. Bump up the version.
@@ -13,11 +15,18 @@ Code is built and published to npm from my machine :P
 3. `npm publish`
 4. git commit & push.
 
+## Local
+
 For local integration of this bulld with other projects there are quite a few different ways:
 
-- npm link
-- just point the dependacy to a file
-- yalc
+- yalc - have used it before and like it.
+- npm local file. Creates a symlink like npm link does. https://docs.npmjs.com/cli/v10/configuring-npm/package-json#dependencies https://docs.npmjs.com/cli/v10/configuring-npm/package-json#local-paths
+- npm link https://docs.npmjs.com/cli/v10/commands/npm-link
+- npm workspaces - bigger abstraction, need to check it out.
+
+Ended up using symlinks by specifying the local file path in package json.
+
+`npm run dev` - builds the pkg on src file changes.
 
 ## TODO (MoSCoW):
 
