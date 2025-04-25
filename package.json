@@ -1,6 +1,6 @@
 {
   "name": "backing-tracks-isomorphic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared Backing Tracks code that runs on client and server.",
   "license": "UNLICENSED",
   "main": "dist/index.js",
@@ -14,11 +14,21 @@
     "npm": ">=10.2.3 <11.0.0",
     "node": ">=20.13.0"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "zod": ">=3.24.2 <4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
+  },
   "devDependencies": {
+    "zod": "^3.24.2",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "zod": "^3.24.2"
   }
 }
