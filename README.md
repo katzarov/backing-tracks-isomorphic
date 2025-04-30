@@ -11,9 +11,10 @@ Contains code that we use on both the client and server, namely:
 Code is built and published to npm from my machine :P
 
 1. Bump up the version.
-2. `npm run build`
-3. `npm publish`
-4. git commit & push.
+2. `npm i`
+3. `npm run build`
+4. `npm publish`
+5. git commit & push.
 
 ## Local
 
