@@ -1,6 +1,6 @@
 {
   "name": "backing-tracks-isomorphic",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Shared Backing Tracks code that runs on client and server.",
   "license": "UNLICENSED",
   "main": "dist/index.js",
@@ -14,21 +14,44 @@
     "npm": ">=10.2.3 <11.0.0",
     "node": ">=20.19.0 <21.0.0"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./internal": {
+      "types": "./dist/internal/index.d.ts",
+      "import": "./dist/internal/index.mjs",
+      "require": "./dist/internal/index.js"
+    },
+    "./api": {
+      "types": "./dist/api/index.d.ts",
+      "import": "./dist/api/index.mjs",
+      "require": "./dist/api/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
   ],
   "peerDependencies": {
+    "validator": "^13.15.0 <14.0.0",
     "zod": ">=3.24.2 <4.0.0"
   },
   "peerDependenciesMeta": {
     "zod": {
       "optional": true
+    },
+    "validator": {
+      "optional": true
     }
   },
   "devDependencies": {
-    "zod": "^3.24.2",
+    "@types/validator": "^13.15.0",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "validator": "^13.15.0",
+    "zod": "^3.24.3"
   }
 }
