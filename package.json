@@ -20,15 +20,10 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./internal": {
-      "types": "./dist/internal/index.d.ts",
-      "import": "./dist/internal/index.mjs",
-      "require": "./dist/internal/index.js"
-    },
-    "./api": {
-      "types": "./dist/api/index.d.ts",
-      "import": "./dist/api/index.mjs",
-      "require": "./dist/api/index.js"
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "import": "./dist/schemas/index.mjs",
+      "require": "./dist/schemas/index.js"
     }
   },
   "files": [

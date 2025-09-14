@@ -1,2 +1,2 @@
-export * from "./api";
-export * from "./internal";
+export * from "./schemas";
+export * from "./enums";

@@ -13,9 +13,11 @@ const youTubeUrlValidator = z
     message: "Not a valid YouTube URL",
   });
 
-export const GetYoutubeVideoInfoRequestSchema = z.object({
-  url: youTubeUrlValidator,
-});
+export const GetYoutubeVideoInfoRequestSchema = z
+  .object({
+    url: youTubeUrlValidator,
+  })
+  .strict();
 
 export type IGetYoutubeVideoInfoRequest = z.infer<
   typeof GetYoutubeVideoInfoRequestSchema

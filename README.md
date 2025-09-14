@@ -6,6 +6,11 @@ Contains code that we use on both the client and server, namely:
 - ts types
 - possibly more in the future
 
+## schemas/api
+
+I am trying out an API first approach for this backing-tracks app.
+So these schemas are used to validate the server response and ofc used on the client as well.
+
 ## Prod
 
 Code is built and published to npm from my machine :P
