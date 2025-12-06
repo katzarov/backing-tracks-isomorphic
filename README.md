@@ -17,9 +17,10 @@ Code is built and published to npm from my machine :P
 
 1. Bump up the version.
 2. `npm i`
-3. `npm run build`
-4. `npm publish`
-5. git commit & push.
+3. stage changes.
+4. `npm run build`
+5. `npm publish`
+6. commit & push.
 
 ## Local
 
@@ -34,8 +35,9 @@ Ended up using symlinks by specifying the local file path in package json.
 
 `npm run dev` - builds the pkg on src file changes.
 
-## TODO (MoSCoW):
+## TODO:
 
-- **(M)** CI/CD with GitHub Actions - build and publish to npm - we should qualify for the free plan.
-- **(C)** TypeSpec - define api first, then generate open api and zod.
-- **(W)** check release management tools although we really don't need one! - release-it, changesets, semantic-release, etc.. Now, we will just do npm publish.
+- upgrade to zod4
+- CI/CD with GitHub Actions - build and publish to npm - we should qualify for the free plan.
+- TypeSpec - define api first, then generate open api and zod.
+- check release management tools although we really don't need one! - release-it, changesets, semantic-release, etc.. Now, we will just do npm publish.
