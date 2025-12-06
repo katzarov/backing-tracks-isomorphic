@@ -1,6 +1,6 @@
 {
   "name": "backing-tracks-isomorphic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared Backing Tracks code that runs on client and server.",
   "license": "UNLICENSED",
   "main": "dist/index.js",
