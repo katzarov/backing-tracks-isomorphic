@@ -19,8 +19,9 @@ Code is built and published to npm from my machine :P
 2. `npm i`
 3. stage changes.
 4. `npm run build`
-5. `npm publish`
-6. commit & push.
+5. (`npm login`)
+6. `npm publish`
+7. commit & push.
 
 ## Local
 
